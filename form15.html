@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="form15.js"></script>
+
+    <style>
+        .colour{
+            color: red;
+        }
+    </style>
+
+
+<style>
+    .form{
+        background-image: url("images/ghost.jpg");
+        background: image 10px;
+    }
+</style>
+
+
+</head>
+<body>
+    <form  name="form15" class="form" onsubmit="return  validationMethod()">
+        <table>
+        <tr>
+            <td>
+                <label for="MS ">NAME :</label><span class="colour">*</span>
+            </td>
+            <td>
+               <input type="text" name="MS " id="MS " placeholder="NAME" required>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="lastName">LAST NAME :</label><span class="colour">*</span>
+            </td>
+            <td>
+               <input type="text" name="lastName" id="lastName" placeholder="LAST NAME" required>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="number">PHONE NUMBER :</label><span class="colour">*</span>
+            </td>
+            <td>
+                <input type="tel" name="number" id="number" placeholder="PHONE NUMBER" required>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="email">EMAIL :</label><span class="colour">*</span>
+            </td>
+            <td>
+                <input type="email" name="email" id="email" placeholder="EMAIL" required>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="Gender">GENDER :</label> <span class="colour">*</span>
+            </td>
+            <td>
+            <input type="radio" name="Gender" id="Gender" required>Male
+            <input type="radio" name="Gender" id="Gender" required>Female
+        </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="Address">ADDRESS :</label> <span class="colour">*</span>
+            </td>
+            <td>
+                <!-- <input type="text" name="Address" id="Address" placeholder="ADDRESS" column="4lines" rows="3 lines" required> -->
+                <textarea name="Address" id="Address" cols="30" rows="05"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="DOB">DATE OF BIRTH :</label> <span class="colour">*</span>
+            </td>
+            <td>
+                <input type="date" name="DOB" id="DOB" placeholder="data" required>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="password">PASSWORD :</label> <span class="colour">*</span>
+            </td>
+            <td>
+                <input type="password" name="password" id="password" placeholder="password" required >
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="conform">CONFORM PASWORD :</label> <span class="colour">*</span>
+            </td>
+            <td>
+                <input type="password" name="conform" id="conform" placeholder="conform password" required>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="file">FILE :</label> <span class="colour">*</span>
+            </td>
+            <td>
+                <input type="file" name="file" id="file" placeholder="file" required>
+            </td>
+        </tr>
+            <tr>
+                <td>
+                    <label for="place">PLACE :</label> <span class="colour">*</span>
+                </td>
+                <td>
+                    <select name="Place" id="Place">
+                    <option value="select">Select</option>
+                    <option value="Davanagere">Davanagere</option>
+                    <option value="Yadgiri">Yadgiri</option>
+                    <option value="Bangalore">Bangalore</option>
+                    <option value="Shivamoga">Shivamoga</option>
+                    <option value="Chikamagaluru">Chikamagaluru</option>
+                    <option value="Chitradurga">Chitradurga</option>
+                </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="Range">RANGE :</label>
+                </td>
+                <td>
+                    <input type="range" name="Range" id="Range" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Technologies">TECHNOLOGIES :</label> <span class="colour">*</span>
+                </td>
+                <td>
+                    <select name="Technologies" id="Technologies">
+                        <option value="">select</option>
+                        <option value="JAVA">JAVA</option>
+                        <option value="Pythan">Pythan</option>
+                        <option value="C++">C++</option>
+                        <option value="Web Technology">Web Technology</option>
+                        <option value="SQL">SQL</option>
+                    </select>
+                </td>
+
+            </tr>
+
+            <tr>
+                <td>
+                    <button value="submit" name="submit">submit</button>
+                </td>
+                <td>
+                    <button name="reset" value="clear">Reset</button>
+                </td>
+            </tr>
+
+    </table>
+    </form>
+</body>
+</html>
